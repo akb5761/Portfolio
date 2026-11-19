@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Cultivara – Where freshness grows</title>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F6F4EC;--surface:#FFFFFF;--ink:#12281F;--muted:#4C6357;--brand:#0F3D2E;--mid:#2F9E6B;--lime:#8CC63F;--line:#DDE5D8;--soft:#E9F2E4;--err:#B3261E;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{color-scheme:light}
+html{scroll-padding-top:calc(76px + env(safe-area-inset-top,0px));scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 'Outfit','Helvetica Neue',Arial,sans-serif}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:10}
+.o{fill:none;stroke:var(--brand);stroke-width:7;stroke-linecap:round}.m{fill:none;stroke:var(--mid);stroke-width:7;stroke-linecap:round}.i{fill:none;stroke:var(--lime);stroke-width:7;stroke-linecap:round}.l{fill:var(--brand)}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:11;background:var(--bg);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;justify-content:space-between;height:72px;gap:16px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:600;font-size:26px;letter-spacing:-.5px;color:var(--brand);text-decoration:none}
+nav{display:flex;gap:26px;align-items:center}
+nav a{color:var(--ink);text-decoration:none;font-weight:500;font-size:16px}
+nav a:hover{color:var(--mid)}
+.btn{display:inline-block;border:2px solid var(--lime);background:var(--lime);color:#0F3D2E;font:600 16px 'Outfit',sans-serif;padding:12px 24px;border-radius:999px;text-decoration:none;cursor:pointer}
+.btn:hover{filter:brightness(.95)}
+.btn.ghost{background:transparent;color:var(--ink);border-color:var(--line)}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--mid);outline-offset:2px}
+.hero{padding:80px 0 64px;background:linear-gradient(180deg,var(--soft),var(--bg))}
+.hl{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin:48px 0 0;padding:0;list-style:none}
+.hl li{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--lime);border-radius:14px;padding:16px 20px}
+.hl strong{display:block;color:var(--brand);font-weight:600}.hl span{font-size:15px;color:var(--muted)}
+.top{background:#0F3D2E;color:#F6F4EC;font-size:14px}
+.top .wrap{display:flex;justify-content:flex-end;gap:24px;flex-wrap:wrap;padding-top:8px;padding-bottom:8px}
+.top a{color:#F6F4EC;text-decoration:none}
+footer a{color:inherit}
+.eyebrow{font-size:14px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--mid)}
+h1{font-size:clamp(40px,6vw,72px);line-height:1.05;letter-spacing:-1.5px;margin:12px 0 20px;color:var(--brand)}
+.lead{font-size:20px;color:var(--muted);max-width:34em;margin:0 0 28px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.pills{display:flex;gap:10px;flex-wrap:wrap;margin-top:28px;padding:0;list-style:none}
+.pills li{background:var(--soft);padding:6px 16px;border-radius:999px;font-size:15px;font-weight:500}
+.art{aspect-ratio:1;border-radius:36px;background:radial-gradient(circle at 30% 25%,var(--soft),transparent 65%),var(--surface);border:1px solid var(--line);display:flex;align-items:center;justify-content:center}
+section{padding:64px 0}
+h2{font-size:clamp(30px,4vw,44px);line-height:1.1;letter-spacing:-1px;margin:8px 0 12px;color:var(--brand)}
+.sub{color:var(--muted);max-width:40em;margin:0 0 36px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:24px;padding:26px}
+.card .ic{font-size:36px;line-height:1}
+.card h3{margin:14px 0 6px;font-size:22px;color:var(--brand)}
+.card p{margin:0 0 14px;color:var(--muted);font-size:16px}
+.card .ex{font-size:14px;color:var(--mid);font-weight:500}
+.link{background:none;border:0;padding:0;font:600 16px 'Outfit',sans-serif;color:var(--mid);cursor:pointer;margin-top:14px}
+.alt{background:var(--soft)}
+.alt .card{background:var(--bg)}
+.num{width:38px;height:38px;border-radius:50%;background:var(--lime);color:#0F3D2E;display:flex;align-items:center;justify-content:center;font-weight:600}
+.form{background:var(--surface);border:1px solid var(--line);border-radius:28px;padding:clamp(22px,4vw,44px)}
+fieldset{border:0;padding:0;margin:0 0 28px}
+legend{font-weight:600;font-size:20px;color:var(--brand);margin-bottom:14px;padding:0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}
+label,.lab{display:block;font-size:15px;font-weight:500;margin-bottom:6px}
+input,select,textarea{width:100%;font:400 16px 'Outfit',sans-serif;color:var(--ink);background:var(--bg);border:1.5px solid var(--line);border-radius:12px;padding:12px 14px}
+input[aria-invalid="true"],select[aria-invalid="true"]{border-color:var(--err)}
+.err{color:var(--err);font-size:14px;margin:4px 0 0}
+.two{display:grid;grid-template-columns:1fr 130px;gap:8px}
+.checks{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:10px}
+.checks label{display:flex;gap:10px;align-items:center;margin:0;font-weight:400;background:var(--bg);border:1.5px solid var(--line);border-radius:12px;padding:10px 14px}
+.checks input{width:auto}
+.hint{font-size:14px;color:var(--muted);margin:10px 0 0}
+pre{white-space:pre-wrap;background:var(--bg);border:1.5px solid var(--line);border-radius:16px;padding:18px;font:400 15px/1.6 'Outfit',sans-serif;margin:16px 0}
+footer{border-top:1px solid var(--line);padding:40px 0;color:var(--muted);font-size:15px}
+footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
+[hidden]{display:none!important}
+@media (max-width:760px){nav a:not(.btn){display:none}.hero .wrap{grid-template-columns:1fr}.art{max-width:300px}.hero{padding-top:40px}.two{grid-template-columns:1fr 110px}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="mk" viewBox="0 0 120 120"><path class="o" d="M99.3 32.5 A48 48 0 1 0 99.3 87.5"/><path class="m" d="M81.9 34 A34 34 0 1 0 81.9 86"/><path class="i" d="M66.8 41.2 A20 20 0 1 0 66.8 78.8"/><path class="l" d="M55 60 C58.5 52 67 52 75 60 C67 68 58.5 68 55 60 Z"/></symbol></svg>
+
+<div class="top"><div class="wrap"><a href="mailto:sales@cultivara.co.in">sales@cultivara.co.in</a><a href="tel:+918618269246">+91 86182 69246</a></div></div>
+<header><div class="wrap bar">
+<a class="logo" href="#top" aria-label="Cultivara home"><svg width="40" height="40" aria-hidden="true"><use href="#mk"/></svg>Cultivara</a>
+<nav><a href="#crops">Crops</a><a href="#why">Why Cultivara</a><a href="#process">How it works</a><a class="btn" href="#enquiry">Request a quote</a></nav>
+</div></header>
+
+<main id="top">
+<div class="hero"><div class="wrap">
+<div>
+<div class="eyebrow">Controlled environment farming</div>
+<h1>Where freshness grows.</h1>
+<p class="lead">Cultivara grows premium leafy greens, herbs and more indoors, under precisely managed light, water and climate. We supply retailers, restaurants, hotels and food businesses in the quantity, variety and packaging you specify.</p>
+<div class="cta"><a class="btn" href="#enquiry">Request a quote</a><a class="btn ghost" href="#crops">Explore crops</a></div>
+<ul class="hl"><li><strong>Year-round supply</strong><span>Planned cycles, steady volumes</span></li><li><strong>Consistent quality</strong><span>Uniform grade, batch after batch</span></li><li><strong>Custom packaging</strong><span>Bulk, retail or your own brand</span></li></ul>
+</div>
+
+</div></div>
+
+<section id="crops"><div class="wrap">
+<div class="eyebrow">What we grow</div><h2>Crops grown to your requirement</h2>
+<p class="sub">Choose a category to start your enquiry. Don’t see your crop? Select “Other” in the form and tell us what you need.</p>
+<div class="cards" id="cropCards"></div>
+</div></section>
+
+<section id="why" class="alt"><div class="wrap">
+<div class="eyebrow">Why Cultivara</div><h2>Built for reliable commercial supply</h2>
+<p class="sub">Farming indoors takes the weather out of the equation, so your menu or shelf stays full.</p>
+<div class="cards">
+<div class="card"><div class="ic">📅</div><h3>Year-round supply</h3><p>Planned production cycles mean steady volumes through every season.</p></div>
+<div class="card"><div class="ic">🎯</div><h3>Consistent quality</h3><p>Uniform size, colour and taste, batch after batch, to the grade you specify.</p></div>
+<div class="card"><div class="ic">💧</div><h3>Resource-smart growing</h3><p>Recirculating water systems and efficient lighting use far less water than open-field farming.</p></div>
+<div class="card"><div class="ic">📦</div><h3>Packed your way</h3><p>Bulk crates, retail punnets, pouches or your own branded packs.</p></div>
+</div>
+</div></section>
+
+<section id="process"><div class="wrap">
+<div class="eyebrow">How it works</div><h2>From enquiry to delivery</h2>
+<p class="sub">A simple four-step process, so you know what to expect.</p>
+<div class="cards">
+<div class="card"><div class="num">1</div><h3>Share your needs</h3><p>Tell us the crop, quantity, packaging and quality you need.</p></div>
+<div class="card"><div class="num">2</div><h3>We confirm</h3><p>Our team replies with availability, pricing and a delivery schedule.</p></div>
+<div class="card"><div class="num">3</div><h3>Harvest to order</h3><p>We harvest close to dispatch for maximum freshness and shelf life.</p></div>
+<div class="card"><div class="num">4</div><h3>Packed and delivered</h3><p>Delivered to your door, in the packaging you asked for.</p></div>
+</div>
+</div></section>
+
+<section id="enquiry" class="alt"><div class="wrap">
+<div class="eyebrow">Bulk enquiry</div><h2>Tell us what you need</h2>
+<p class="sub">Fill in your requirement and we’ll come back with a quote. Fields marked * are required.</p>
+
+<form class="form" id="form" novalidate>
+<fieldset><legend>1. Your details</legend><div class="grid">
+<div><label for="name">Full name *</label><input id="name" data-req autocomplete="name"><p class="err" hidden>Please enter your name.</p></div>
+<div><label for="company">Company / business</label><input id="company" autocomplete="organization"></div>
+<div><label for="btype">Business type</label><select id="btype"><option>Retailer / supermarket</option><option>Restaurant / hotel / café</option><option>Caterer / institution</option><option>Food processor</option><option>Distributor / wholesaler</option><option>Individual / other</option></select></div>
+<div><label for="email">Email *</label><input id="email" type="email" data-req autocomplete="email"><p class="err" hidden>Please enter a valid email.</p></div>
+<div><label for="phone">Phone / WhatsApp</label><input id="phone" type="tel" autocomplete="tel"></div>
+<div><label for="city">Delivery location *</label><input id="city" data-req autocomplete="address-level2" placeholder="City or area"><p class="err" hidden>Please enter a delivery location.</p></div>
+</div></fieldset>
+
+<fieldset><legend>2. Crop requirement</legend><div class="grid">
+<div><label for="cat">Crop category *</label><select id="cat" data-req><option value="">Select a category</option></select><p class="err" hidden>Please choose a category.</p></div>
+<div><label for="variety">Variety *</label><select id="variety" data-req disabled><option value="">Choose a category first</option></select><p class="err" hidden>Please choose a variety.</p></div>
+<div id="otherWrap" hidden><label for="varOther">Specify variety *</label><input id="varOther" data-req><p class="err" hidden>Please specify the variety.</p></div>
+<div><span class="lab">Quantity needed *</span><div class="two"><input id="qty" type="number" min="1" step="any" data-req aria-label="Quantity"><select id="unit" aria-label="Unit"><option>kg</option><option>tonnes</option><option>packs</option></select></div><p class="err" hidden>Please enter a quantity above zero.</p></div>
+<div><label for="freq">Supply frequency</label><select id="freq"><option>One-time order</option><option>Weekly</option><option>Every two weeks</option><option>Monthly</option></select></div>
+<div><label for="by">Required from</label><input id="by" type="date"></div>
+</div></fieldset>
+
+<fieldset><legend>3. Packaging</legend><div class="grid">
+<div><label for="pack">Packaging type</label><select id="pack"><option>Bulk crates / cartons</option><option>Retail punnets / clamshells</option><option>Pouches / bags</option><option>Trays</option><option>Custom / branded packaging</option></select></div>
+<div><label for="psize">Pack size (optional)</label><input id="psize" placeholder="e.g. 100 g, 250 g, 1 kg"></div>
+</div></fieldset>
+
+<fieldset><legend>4. Quality requirements</legend>
+<div class="checks">
+<label><input type="checkbox" name="q" value="Premium / export grade"> Premium / export grade</label>
+<label><input type="checkbox" name="q" value="Uniform size and colour"> Uniform size and colour</label>
+<label><input type="checkbox" name="q" value="Washed and ready to eat"> Washed and ready to eat</label>
+<label><input type="checkbox" name="q" value="Residue / lab test report"> Residue / lab test report</label>
+<label><input type="checkbox" name="q" value="Minimum shelf life required"> Minimum shelf life required</label>
+<label><input type="checkbox" name="q" value="Cold-chain delivery"> Cold-chain delivery</label>
+</div>
+<div style="margin-top:16px"><label for="notes">Other requirements or notes</label><textarea id="notes" rows="4" placeholder="Specifications, certifications, target price, delivery timings…"></textarea></div>
+</fieldset>
+
+<button class="btn" type="submit">Review my enquiry</button>
+<p class="hint">You’ll be able to review everything before sending it to our team.</p>
+</form>
+
+<div class="form" id="result" hidden>
+<h3 style="margin:0;font-size:26px;color:var(--brand)">Your enquiry is ready</h3>
+<p class="sub" style="margin:8px 0 0">Send it to our team using one of the options below.</p>
+<pre id="sumText"></pre>
+<div class="cta"><a class="btn" id="mailBtn" target="_blank" rel="noopener">Send by email</a><a class="btn" id="waBtn" target="_blank" rel="noopener">Send on WhatsApp</a><button class="btn ghost" id="copyBtn" type="button">Copy enquiry</button><button class="btn ghost" id="editBtn" type="button">Edit details</button></div>
+<p class="hint" id="copyMsg" role="status"></p>
+</div>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+<div><a class="logo" href="#top" style="font-size:22px"><svg width="32" height="32" aria-hidden="true"><use href="#mk"/></svg>Cultivara</a><p style="margin:8px 0 0">Where freshness grows.</p></div>
+<div><strong>Contact sales</strong><br><a id="fEmail" href="mailto:sales@cultivara.co.in"></a><br><a id="fPhone" href="tel:+918618269246"></a></div>
+<div><strong>Address</strong><address style="font-style:normal">NH-66, Karavali Bypass,<br>Post Ambalapady, Udupi,<br>Karnataka – 576103</address></div>
+<div>© 2026 Cultivara. All rights reserved.</div>
+</div></footer>
+
+<script>
+(function(){
+var CONTACT={email:"sales@cultivara.co.in",phone:"+91 86182 69246",wa:"918618269246"};
+var CROPS={
+"Leafy greens":{ic:"🥬",d:"Crisp, tender lettuces and leaves, harvested to order.",v:["Butterhead lettuce","Romaine lettuce","Lollo rosso","Iceberg lettuce","Baby spinach","Kale","Rocket (arugula)","Pak choi"]},
+"Herbs":{ic:"🌿",d:"Aromatic culinary herbs with strong flavour and long shelf life.",v:["Basil (Genovese)","Thai basil","Mint","Coriander","Parsley","Dill","Chives","Thyme"]},
+"Microgreens":{ic:"🌱",d:"Nutrient-dense, colourful shoots for premium plating.",v:["Sunflower","Radish","Pea shoots","Broccoli","Mustard","Mixed microgreens"]},
+"Fruiting crops":{ic:"🍅",d:"Vine-ripened salad and fruiting crops, grown indoors.",v:["Cherry tomato","Cucumber","Bell pepper","Strawberry"]}
+};
+var $=function(i){return document.getElementById(i)};
+var cat=$("cat"),vari=$("variety"),form=$("form");
+$("fEmail").textContent=CONTACT.email;$("fPhone").textContent=CONTACT.phone;
+Object.keys(CROPS).forEach(function(k){
+cat.add(new Option(k,k));
+var c=CROPS[k],d=document.createElement("div");d.className="card";
+d.innerHTML='<div class="ic">'+c.ic+'</div><h3>'+k+'</h3><p>'+c.d+'</p><div class="ex">'+c.v.slice(0,4).join(" · ")+'</div>';
+var b=document.createElement("button");b.className="link";b.type="button";b.textContent="Enquire about "+k.toLowerCase()+" →";
+b.onclick=function(){cat.value=k;fillVar();$("enquiry").scrollIntoView();setTimeout(function(){vari.focus()},400)};
+d.appendChild(b);$("cropCards").appendChild(d);
+});
+function fillVar(){
+vari.length=1;$("otherWrap").hidden=true;
+var list=(CROPS[cat.value]||{}).v||[];
+list.forEach(function(v){vari.add(new Option(v,v))});
+if(cat.value){vari.add(new Option("Other (specify)","Other"));vari.options[0].text="Select a variety";}
+else{vari.options[0].text="Choose a category first";}
+vari.disabled=!cat.value;vari.value="";
+}
+cat.onchange=fillVar;
+vari.onchange=function(){$("otherWrap").hidden=vari.value!=="Other"};
+try{$("by").min=new Date().toISOString().slice(0,10)}catch(e){}
+
+function check(f){
+var bad=false;
+if(f.closest("[hidden]"))return false;
+var v=f.value.trim();
+if(!v)bad=true;
+else if(f.type==="email"&&!/^\S+@\S+\.\S+$/.test(v))bad=true;
+else if(f.id==="qty"&&!(parseFloat(v)>0))bad=true;
+f.setAttribute("aria-invalid",bad);
+var er=f.closest("div:not(.two)").querySelector(".err");if(er)er.hidden=!bad;
+return bad;
+}
+form.addEventListener("submit",function(e){
+e.preventDefault();
+var first=null;
+form.querySelectorAll("[data-req]").forEach(function(f){if(check(f)&&!first)first=f});
+if(first){first.focus();return}
+var val=function(i){return $(i).value.trim()||"–"};
+var q=Array.prototype.map.call(form.querySelectorAll("input[name=q]:checked"),function(x){return x.value});
+var variety=vari.value==="Other"?$("varOther").value.trim():vari.value;
+var text=["New crop enquiry – Cultivara","",
+"Name: "+val("name"),"Company: "+val("company"),"Business type: "+val("btype"),
+"Email: "+val("email"),"Phone: "+val("phone"),"Delivery location: "+val("city"),"",
+"Crop category: "+cat.value,"Variety: "+variety,
+"Quantity: "+val("qty")+" "+$("unit").value,"Frequency: "+$("freq").value,"Required from: "+val("by"),"",
+"Packaging: "+$("pack").value,"Pack size: "+val("psize"),"",
+"Quality requirements: "+(q.length?q.join(", "):"–"),"Notes: "+val("notes")].join("\n");
+$("sumText").textContent=text;
+$("mailBtn").href="mailto:"+CONTACT.email+"?subject="+encodeURIComponent("Crop enquiry – "+variety)+"&body="+encodeURIComponent(text);
+$("waBtn").href="https://wa.me/"+CONTACT.wa+"?text="+encodeURIComponent(text);
+form.hidden=true;$("result").hidden=false;$("copyMsg").textContent="";
+$("result").scrollIntoView();
+});
+$("editBtn").onclick=function(){$("result").hidden=true;form.hidden=false;form.scrollIntoView()};
+$("copyBtn").onclick=function(){
+var t=$("sumText").textContent;
+function ok(){$("copyMsg").textContent="Copied. You can paste it into an email or message."}
+function fail(){$("copyMsg").textContent="Couldn’t copy automatically. Please select the text above and copy it."}
+try{navigator.clipboard.writeText(t).then(ok,fail)}catch(e){fail()}
+};
+})();
+</script>
+</body>
+</html>

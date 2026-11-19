@@ -1,0 +1,27 @@
+CULTIVARA WEBSITE - LICENSE
+
+Copyright (c) 2026 Cultivara. All rights reserved.
+
+This website, including its design, text, logo, brand name, tagline and
+source code, is the proprietary property of Cultivara.
+
+No part of this work may be copied, modified, distributed, sublicensed or
+used for any commercial purpose without the prior written permission of
+Cultivara, except that Cultivara and persons authorised by it may host,
+edit and maintain the website for Cultivara's own business.
+
+The names "Cultivara" and the Cultivara logo are trademarks or brand
+identifiers of Cultivara and may not be used without permission.
+
+THIRD-PARTY COMPONENTS
+The "Outfit" typeface is loaded from Google Fonts and is licensed under
+the SIL Open Font License 1.1. It is not covered by this license.
+
+DISCLAIMER
+THE WEBSITE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
+THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY ARISING
+FROM THE USE OF THE WEBSITE.
+
+Contact: sales@cultivara.co.in
